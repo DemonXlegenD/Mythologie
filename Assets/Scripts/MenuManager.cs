@@ -20,13 +20,23 @@ public class MenuManager : MonoBehaviour
     private bool cinematic = false;
     private bool clicked = false;
 
-    [SerializeField] private List<VideoClip> videos;
+    // Noms de fichiers dans Assets/StreamingAssets (lecture par URL, requis pour WebGL)
+    [SerializeField] private List<string> videos;
+    [SerializeField] private string menuVideoFile = "Main_Menu.mp4";
 
     public bool isMute = false;
 
     void Start()
     {
         skip.SetActive(false);
+        videoPlayer.url = StreamingUrl(menuVideoFile);
+        videoPlayer.isLooping = true;
+        videoPlayer.Play();
+    }
+
+    private static string StreamingUrl(string fileName)
+    {
+        return Application.streamingAssetsPath + "/" + fileName;
     }
 
     private void Update()
@@ -63,7 +73,7 @@ public class MenuManager : MonoBehaviour
         if (videoClipIndex < videos.Count)
         {
             if (videoPlayer.isPlaying) videoPlayer.Stop();
-            videoPlayer.clip = videos[videoClipIndex];
+            videoPlayer.url = StreamingUrl(videos[videoClipIndex]);
             videoPlayer.Play();
         }
         else

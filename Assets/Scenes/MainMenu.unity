@@ -634,7 +634,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667480608}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 893d401beb075954984379781c98cccd, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -647,7 +647,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 0
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -656,7 +656,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -927,24 +927,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: videos.Array.data[0]
-      value: 
-      objectReference: {fileID: 32900000, guid: 06dd175cce09622429a8e9201bc14eed, type: 3}
+      value: Cinematic_01.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: videos.Array.data[1]
-      value: 
-      objectReference: {fileID: 32900000, guid: 38dd6f8491d9aa143a319123ce07c347, type: 3}
+      value: Cinematic_02.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: videos.Array.data[2]
-      value: 
-      objectReference: {fileID: 32900000, guid: 3106dffc9a524254b80d74bb77fc4f7c, type: 3}
+      value: Cinematic_03.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: videos.Array.data[3]
-      value: 
-      objectReference: {fileID: 32900000, guid: 685aa7f98f4a96c4bb7329861732eebc, type: 3}
+      value: Cinematic_04.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: videos.Array.data[4]
-      value: 
-      objectReference: {fileID: 32900000, guid: 71479a221f2ab274dad4ccfe4bd7ec40, type: 3}
+      value: Cinematic_05.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 3120783544432219822, guid: 0bfce5cb5ae814a46b5fa1d9423435f2, type: 3}
       propertyPath: hideToStart.Array.size
       value: 4
